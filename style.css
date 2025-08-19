@@ -1,5 +1,6 @@
 body {
    background-color:darkcyan ;
+    background: linear-gradient(to right, #369be3, #2967cb);
    align-items: center;
    
 }
