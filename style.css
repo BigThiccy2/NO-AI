@@ -1,6 +1,6 @@
 body {
    background-color:darkcyan ;
-    background: linear-gradient(to right, #369be3, #2967cb);
+    background: radial-gradient(circle at center, #546f83, #2e3136);
    align-items: center;
    
 }
