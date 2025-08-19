@@ -1,7 +1,19 @@
-body {
-    background: radial-gradient(circle at center, #2d81c1, #2e3136);
-   align-items: center;
-   
+.animated-bg {
+  width: 300px;
+  height: 200px;
+  animation: colorChange 5s infinite alternate; /* Animation takes 5 seconds for one cycle */
+}
+
+@keyframes colorChange {
+  0% {
+    background-color: red;
+  }
+  50% {
+    background-color: blue;
+  }
+  100% {
+    background-color: green;
+  }
 }
 
     .my-custom-button {
