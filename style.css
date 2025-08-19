@@ -5,8 +5,6 @@ body {
 }
 
     .my-custom-button {
-      font-family: "Arial", sans-serif; /* Changes the font face */
-      font-size: 16px; /* Changes the font size */
-      font-weight: bold; /* Changes the font weight (e.g., bold) */
-      color: #333; /* Changes the text color */
+      font-family: 'Arial', sans-serif;
+      font-size: 16px;
     }
