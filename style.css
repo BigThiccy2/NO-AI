@@ -4,7 +4,7 @@ body {
    
 }
 
-    button {
+    .my-custom-button {
       font-family: "Arial", sans-serif; /* Changes the font face */
       font-size: 16px; /* Changes the font size */
       font-weight: bold; /* Changes the font weight (e.g., bold) */
