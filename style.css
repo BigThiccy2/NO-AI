@@ -6,13 +6,18 @@ body {
 
 @keyframes gradientMove {
   0% {
-    background-position: 0% 50%;
+    background-position: 0% 33%;
     color: #000000;
   }
-  100% {
-    background-position: 100% 50%;
+  33% {
+    background-position: 33% 66%;
     color: blueviolet;
   }
+  66% {
+    background-position: 66% 100%;
+    color: #000000;
+  }
+
 }
 
     .my-custom-button {
