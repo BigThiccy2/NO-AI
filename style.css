@@ -1,10 +1,10 @@
 body {
   background: linear-gradient(180deg, #000000, #f01bff, #000000);
   background-size: 600% 600%;
-  animation: gradient-move 3s ease infinite; /* 3s = fast, lower for faster */
+  animation: gradient-move 3s ease-in-out infinite alternate; /* 'alternate' makes it go back and forth */
 }
 
-@keyframes gradientMove {
+@keyframes gradient-move {
   0% {
     background-position: 0% 50%;
   }
@@ -12,7 +12,6 @@ body {
     background-position: 100% 50%;
   }
 }
-
     .my-custom-button {
       font-family: 'Arial', sans-serif;
       font-size: 12px;
