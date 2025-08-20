@@ -1,5 +1,5 @@
 body {
-  background: linear-gradient(270deg, #000000, #f01bff, #8c0c0c);
+  background: linear-gradient(270deg, #000000, blueviolet, #000000);
   background-size: 600% 600%;
   animation: gradient-move 2s ease infinite; /* 3s = fast, lower for faster */
 }
@@ -7,9 +7,11 @@ body {
 @keyframes gradientMove {
   0% {
     background-position: 0% 50%;
+    color: #000000;
   }
   100% {
     background-position: 100% 50%;
+    color: blueviolet;
   }
 }
 
