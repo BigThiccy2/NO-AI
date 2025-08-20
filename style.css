@@ -1,17 +1,10 @@
 body {
   background: linear-gradient(90deg, #000000, blueviolet, #000000, blueviolet, #000000);
   background-size: 300% 100%; /* Wider for seamless repeat */
-  animation: gradient-scroll 5s linear infinite;
+  animation: gradient-move 5s ease infinite;
 }
 
-@keyframes gradient-scroll {
-  0% {
-    background-position: 50% 100%;
-  }
-  100% {
-    background-position: 150% 200%;
-  }
-}
+
 
     .my-custom-button {
       font-family: 'Arial', sans-serif;
