@@ -1,23 +1,16 @@
 body {
-  background: linear-gradient(90deg, #000000, blueviolet, #000000, blueviolet);
-  background-size: 200% 100%; /* Makes the gradient repeat horizontally */
-  animation: gradient-scroll 5s linear infinite;
+  background: linear-gradient(90deg, #000000, blueviolet, #000000, blueviolet, #000000);
+  background-size: 300% 100%; /* Wider for seamless repeat */
+  animation: gradient-scroll 6s linear infinite;
 }
 
 @keyframes gradient-scroll {
   0% {
-    background-position: 0% 33%;
+    background-position: 0% 50%;
   }
-  33% {
-    background-position: 33% 66%;
+  100% {
+    background-position: 100% 50%;
   }
-  66% {
-    background-position: 66% 99%;
-  }
-  99% {
-    background-position: 99% 200%;
-  }
-
 }
 
     .my-custom-button {
