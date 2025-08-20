@@ -1,6 +1,6 @@
 body {
   background: linear-gradient(180deg, #000000, #f01bff, #000000);
-  background-size: 600% 600%;
+  background-size: 400% 400%;
   animation: gradient-move 3s infinite alternate ; /* 'alternate' makes it go back and forth */
 }
 
