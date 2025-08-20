@@ -6,16 +6,20 @@ body {
 
 @keyframes gradientMove {
   0% {
-    background-position: 0% 33%;
+    background-position: 0% 100%;
     color: #000000;
   }
   33% {
-    background-position: 33% 66%;
+    background-position: 100% 200%;
     color: blueviolet;
   }
   66% {
-    background-position: 66% 100%;
+    background-position: 200% 300%;
     color: #000000;
+  }
+  99% {
+    background-position: 300% 400%;
+    color: blueviolet;
   }
 
 }
