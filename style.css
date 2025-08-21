@@ -1,8 +1,6 @@
 body {
   color: dimgrey;
-  background: linear-gradient(right 270deg, #000000, blueviolet, #000000,);
-  background-size: 300% 100%; /* Wider for seamless repeat */
-  animation: gradient-move 5s ease infinite;
+  background-color: dimgrey;
 }
 
 
