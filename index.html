@@ -2,15 +2,35 @@
 <head>
  <link rel="stylesheet" href="style.css">
 </head>
-    
+    <link rel="stylesheet" href="script.js">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
+
+    <script>
+    var audio = new Audio('/s/boing.mp3'); // Replace with your sound file
+    var button = document.getElementById('myButton'); // Replace with your button's ID
+
+    button.addEventListener('mouseover', function() {
+      audio.play();
+    });
+
+    button.addEventListener('click', function() {
+      audio.play();
+    });
+    
+  </script>
+
+  <button id="myButton">Click Me</button>
+  <audio id="myAudio" src="/s/boing.mp3"></audio> 
+
     
 </body>
 </html>
 
       <button class="my-custom-button">Click Me</button>
+      <audio id="clickSound" src="click.wav"></audio>
+      <audio id="hoverSound" src="hover.wav"></audio>
 
