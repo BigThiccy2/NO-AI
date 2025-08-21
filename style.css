@@ -1,6 +1,7 @@
 body {
   color: dimgrey;
   background-color: dimgrey;
+  background: linear-gradient(to right, #000000, blueviolet, #000000);
 }
 
 
