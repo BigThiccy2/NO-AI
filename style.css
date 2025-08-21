@@ -13,18 +13,18 @@ body {
       size: 15px;
       padding: 16px 32px; 
       border-width: 5px;
-      background: linear-gradient (270deg #f01bff, black,)
+      background-color: linear-gradient (270deg #f01bff, black,)
 
     }
 
     .myButton:hover {
       font-family: 'Arial', sans-serif;
       font-size: 12px;
-      color: rgb(48, 48, 48);a
+      color: rgb(48, 48, 48);
       border-radius: 0px;
       size: 15px;
       padding: 16px 32px; 
       border-width: 5px;
-      background: linear-gradient (270deg #f240ff, #484848,)
+      background-color: linear-gradient (270deg #f240ff, #484848,)
 
     }
