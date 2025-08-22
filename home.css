@@ -29,38 +29,38 @@ body {
 
     }
 
-    .topnav {
-  background-color: #333;
-  overflow: hidden;
-  padding: 5px;
-  border-radius: 5px;
-}
+      .topnav {
+    background-color: #333;
+    overflow: hidden;
+    padding: 5px;
+    border-radius: 5px;
+  }
 
-/* Style the links inside the navigation bar */
-.topnav a {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-  padding: 5px;
-  border-radius: 5px;
-}
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    padding: 5px;
+    border-radius: 5px;
+  }
 
-/* Change the color of links on hover */
-.topnav a:hover {
-  background-color: #0487c8;
-  color: black;
-}
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #0487c8;
+    color: black;
+  }
 
-/* Add a color to the active/current link */
-.topnav a.active {
-  background-color: #045daa;
-  color: white;
-}
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: #045daa;
+    color: white;
+  }
 
-.topnav a.active:hover {
-  background-color: #0487c8;
-  color: white;
-}
+  .topnav a.active:hover {
+    background-color: #0487c8;
+    color: white;
+  }
