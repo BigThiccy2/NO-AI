@@ -1,71 +1,70 @@
-body {
-  color: dimgrey;
-  background-color: dimgrey;
-  background: linear-gradient(270deg blueviolet, black, blueviolet,)
+/* SIA Synthwave-inspired theme */
 
+body {
+  color: #f6f7f9;
+  background: linear-gradient(120deg, #2a2139 0%, #3a2d5d 50%, #2a2139 100%);
+  min-height: 100vh;
+  font-family: 'Fira Mono', 'Consolas', 'Monaco', monospace;
+  letter-spacing: 0.5px;
 }
 
-    .myButton {
-      font-family: 'Arial', sans-serif;
-      font-size: 12px;
-      color: rgb(0, 0, 0);
-      border-radius: 0px;
-      size: 15px;
-      padding: 16px 32px; 
-      border-width: 5px;
-      background-color: #045daa;
-      transition: background-color 0.3s, color 0.3s; /* Add this line */
-    }
+.myButton {
+  font-family: 'Fira Mono', 'Consolas', 'Monaco', monospace;
+  font-size: 16px;
+  color: #f6f7f9;
+  background: linear-gradient(90deg, #ff6ac1 0%, #198fff 100%);
+  border: 2px solid #ff6ac1;
+  border-radius: 8px;
+  padding: 14px 36px;
+  box-shadow: 0 0 12px #ff6ac1, 0 0 24px #198fff inset;
+  transition: background 0.4s, color 0.4s, box-shadow 0.4s;
+  cursor: pointer;
+  text-shadow: 0 2px 8px #000a;
+}
 
-    .myButton:hover {
-      font-family: 'Arial', sans-serif;
-      font-size: 12px;
-      color: rgb(48, 48, 48);
-      border-radius: 0px;
-      size: 15px;
-      padding: 16px 32px; 
-      border-width: 5px;
-      background-color: #0487c8;
+.myButton:hover {
+  background: linear-gradient(90deg, #198fff 0%, #ff6ac1 100%);
+  color: #fff;
+  box-shadow: 0 0 24px #198fff, 0 0 32px #ff6ac1 inset;
+}
 
-    }
+.topnav {
+  background: rgba(42, 33, 57, 0.95);
+  overflow: hidden;
+  padding: 8px 0;
+  border-radius: 10px;
+  box-shadow: 0 2px 16px #ff6ac1a0;
+  margin-bottom: 24px;
+}
 
-      .topnav {
-    background-color: #333;
-    overflow: hidden;
-    padding: 5px;
-    border-radius: 5px;
-  }
+.topnav a {
+  float: right;
+  color: #f6f7f9;
+  text-align: center;
+  padding: 12px 24px;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 6px;
+  margin: 0 6px;
+  transition: background 0.4s, color 0.4s, box-shadow 0.4s;
+  box-shadow: 0 0 8px #198fff40;
+  position: relative;
+}
 
-  /* Style the links inside the navigation bar */
-  .topnav a {
-    float: right;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    padding: 5px;
-    border-radius: 5px;
-    transition: background-color 0.3s, color 0.3s; /* Add this line */
+.topnav a:hover {
+  background: linear-gradient(90deg, #ff6ac1 0%, #198fff 100%);
+  color: #fff;
+  box-shadow: 0 0 16px #ff6ac1, 0 0 24px #198fff inset;
+}
 
-  }
+.topnav a.active {
+  background: linear-gradient(90deg, #198fff 0%, #ff6ac1 100%);
+  color: #fff;
+  box-shadow: 0 0 20px #198fff, 0 0 32px #ff6ac1 inset;
+}
 
-  /* Change the color of links on hover */
-  .topnav a:hover {
-    background-color: #0487c8;
-    color: black;
-  }
-
-  /* Add a color to the active/current link */
-  .topnav a.active {
-    background-color: #045daa;
-    color: white;
-    transition: background-color 0.3s, color 0.3s; /* Add this line */
-
-  }
-
-  .topnav a.active:hover {
-    background-color: #0487c8;
-    color: white;
-
-  }
+.topnav a.active:hover {
+  background: linear-gradient(90deg, #ff6ac1 0%, #198fff 100%);
+  color: #fff;
+  box-shadow: 0 0 32px #ff6ac1, 0 0 40px #198fff inset;
+}
