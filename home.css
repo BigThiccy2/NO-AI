@@ -80,7 +80,7 @@ body {
       border: none;
       color: #ff6ac1;
       font-size: inherit;
-      font-family: inherit;
+      font-family:'Fira Mono', 'Consolas', 'Monaco', monospace;
       cursor: pointer;
       padding: 0;
       margin: 0;
