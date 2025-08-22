@@ -68,3 +68,35 @@ body {
   color: #fff;
   box-shadow: 0 0 32px #ff6ac1, 0 0 40px #198fff inset;
 }
+
+.secret-btn:hover, .secret-btn:focus {
+      color: #fff;
+      outline: none;
+      text-shadow: 0 0 32px #ff6ac1, 0 0 40px #198fff;
+    }
+
+      .secret-btn {
+      background: none;
+      border: none;
+      color: #ff6ac1;
+      font-size: inherit;
+      font-family: inherit;
+      cursor: pointer;
+      padding: 0;
+      margin: 0;
+      text-shadow: 0 0 24px #ff6ac1, 0 0 32px #198fff;
+      transition: color 0.3s;
+    }
+
+    #game-section {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 70vh;
+      animation: fadeIn 0.7s;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+    }
