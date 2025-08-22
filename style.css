@@ -13,7 +13,7 @@ body {
       size: 15px;
       padding: 16px 32px; 
       border-width: 5px;
-      background-color: linear-gradient (270deg #f01bff, black,)
+      background-color:teal
 
     }
 
@@ -25,6 +25,6 @@ body {
       size: 15px;
       padding: 16px 32px; 
       border-width: 5px;
-      background-color: linear-gradient (270deg #f240ff, #484848,)
+      background-color:darkslateblue
 
     }
