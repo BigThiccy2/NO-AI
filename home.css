@@ -13,8 +13,8 @@ body {
       size: 15px;
       padding: 16px 32px; 
       border-width: 5px;
-      background-color:teal
-
+      background-color: #045daa;
+      transition: background-color 0.3s, color 0.3s; /* Add this line */
     }
 
     .myButton:hover {
@@ -25,7 +25,7 @@ body {
       size: 15px;
       padding: 16px 32px; 
       border-width: 5px;
-      background-color: darkcyan
+      background-color: #0487c8;
 
     }
 
