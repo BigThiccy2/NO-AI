@@ -38,7 +38,7 @@ body {
 }
 
 .topnav a {
-  float: right;
+  float: center;
   color: #f6f7f9;
   text-align: center;
   padding: 12px 24px;
