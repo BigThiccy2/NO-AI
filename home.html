@@ -8,8 +8,8 @@
 <body>
   <nav class="topnav">
     <a href="#" class="active">Home</a>
-    <a href="#">Developers</a>
-    <a href="#">Apps</a>
+    <a href="#">Features</a>
+    <a href="#">Gallery</a>
     <a href="#">Contact</a>
   </nav>
   <main id="main-section" style="display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 70vh;">
@@ -24,7 +24,42 @@
     <h2 style="font-size: 2.2rem; color: #ff6ac1; text-shadow: 0 0 24px #ff6ac1, 0 0 32px #198fff;">Fractal Game</h2>
     <p style="font-size: 1.2rem; color: #f6f7f9;">Welcome to the secret game section! (You can add your game here.)</p>
     <button class="myButton" id="back-btn" style="margin-top: 2rem;">Back to Home</button>
+    <button class="game-preview-btn">
+      <img src="game-preview.png" alt="Fractal Game Preview" class="game-preview-img">
+      <span class="game-preview-label">Play Fractal Game</span>
+    </button>
+    <div>
   </section>
+  <!-- Audio element for hover sound -->
+  <audio id="hover-sound" src="Audio/mixkit-cool-interface-click-tone-2568.wav" preload="auto"></audio>
+  <script>
+    const fractalBtn = document.getElementById('fractal-secret-btn');
+    const mainSection = document.getElementById('main-section');
+    const gameSection = document.getElementById('game-section');
+    const backBtn = document.getElementById('back-btn');
+    const hoverSound = document.getElementById('hover-sound');
 
+    // Play sound on hover for all clickable elements
+    function addHoverSound(selector) {
+      document.querySelectorAll(selector).forEach(el => {
+        el.addEventListener('mouseenter', () => {
+          hoverSound.currentTime = 0;
+          hoverSound.play();
+        });
+      });
+    }
+
+    addHoverSound('.myButton, .secret-btn, .game-preview-btn, .topnav a');
+
+    fractalBtn.addEventListener('click', () => {
+      mainSection.style.display = 'none';
+      gameSection.style.display = 'flex';
+    });
+
+    backBtn.addEventListener('click', () => {
+      gameSection.style.display = 'none';
+      mainSection.style.display = 'flex';
+    });
+  </script>
 </body>
 </html>
