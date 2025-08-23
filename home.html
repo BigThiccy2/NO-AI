@@ -30,26 +30,11 @@
     </button>
     <div>
   </section>
-  <!-- Audio element for hover sound -->
-  <audio id="hover-sound" src="Audio/mixkit-cool-interface-click-tone-2568.wav" preload="auto"></audio>
   <script>
     const fractalBtn = document.getElementById('fractal-secret-btn');
     const mainSection = document.getElementById('main-section');
     const gameSection = document.getElementById('game-section');
     const backBtn = document.getElementById('back-btn');
-    const hoverSound = document.getElementById('hover-sound');
-
-    // Play sound on hover for all clickable elements
-    function addHoverSound(selector) {
-      document.querySelectorAll(selector).forEach(el => {
-        el.addEventListener('mouseenter', () => {
-          hoverSound.currentTime = 0;
-          hoverSound.play();
-        });
-      });
-    }
-
-    addHoverSound('.myButton, .secret-btn, .game-preview-btn, .topnav a');
 
     fractalBtn.addEventListener('click', () => {
       mainSection.style.display = 'none';
