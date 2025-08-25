@@ -244,4 +244,56 @@ body {
   box-shadow: 0 0 16px #000a, 0 0 24px #23252680 inset;
 }
 
+/* ...existing code... */
+
+/* Blue Synthwave theme */
+.theme-bluesynth {
+  color: #e0f7fa;
+  background: linear-gradient(120deg, #1a237e 0%, #0d47a1 50%, #1a237e 100%);
+}
+
+.theme-bluesynth .topnav {
+  background: rgba(13, 71, 161, 0.95);
+  box-shadow: 0 2px 16px #64b5f6a0;
+}
+
+.theme-bluesynth .topnav a {
+  color: #e0f7fa;
+  box-shadow: 0 0 8px #64b5f640;
+  background: none;
+}
+
+.theme-bluesynth .topnav a:hover,
+.theme-bluesynth .topnav a.active {
+  background: linear-gradient(90deg, #64b5f6 0%, #00bcd4 100%);
+  color: #fff;
+  box-shadow: 0 0 16px #64b5f6, 0 0 24px #00bcd480 inset;
+}
+
+.theme-bluesynth .myButton,
+.theme-bluesynth .game-preview-btn {
+  background: linear-gradient(90deg, #64b5f6 0%, #00bcd4 100%);
+  color: #e0f7fa;
+  border: 2px solid #64b5f6;
+  box-shadow: 0 0 12px #64b5f6, 0 0 24px #00bcd480 inset;
+}
+
+.theme-bluesynth .myButton:hover,
+.theme-bluesynth .game-preview-btn:hover {
+  background: linear-gradient(90deg, #00bcd4 0%, #64b5f6 100%);
+  color: #fff;
+  box-shadow: 0 0 24px #00bcd4, 0 0 32px #64b5f6 inset;
+}
+
+.theme-bluesynth .secret-btn {
+  color: #64b5f6;
+  text-shadow: 0 0 24px #64b5f6, 0 0 32px #00bcd4;
+}
+
+.theme-bluesynth .secret-btn:hover, 
+.theme-bluesynth .secret-btn:focus {
+  color: #00bcd4;
+  text-shadow: 0 0 32px #64b5f6, 0 0 40px #00bcd4;
+}
+
 /* ...rest of your code... */
