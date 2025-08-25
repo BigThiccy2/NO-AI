@@ -136,15 +136,15 @@ body {
   text-shadow: 0 0 8px #ff6ac1;
 }
 
-/* ...existing code... */
-
 /* Synthwave (default) */
+
 .theme-synthwave {
   color: #f6f7f9;
   background: linear-gradient(120deg, #2a2139 0%, #3a2d5d 50%, #2a2139 100%);
 }
 
 /* Light theme */
+
 .theme-light {
   color: #222;
   background: linear-gradient(120deg, #f6f7f9 0%, #e0e7ef 100%);
@@ -168,6 +168,7 @@ body {
 }
 
 /* Dark theme */
+
 .theme-dark {
   color: #f6f7f9;
   background: linear-gradient(120deg, #181818 0%, #232526 100%);
@@ -183,9 +184,8 @@ body {
   border: 2px solid #444;
   box-shadow: 0 0 12px #000a, 0 0 }
 
-  /* ...existing code... */
-
 /* Synthwave (default) */
+
 .theme-synthwave {
   color: #f6f7f9;
   background: linear-gradient(120deg, #2a2139 0%, #3a2d5d 50%, #2a2139 100%);
@@ -197,6 +197,7 @@ body {
 }
 
 /* Light theme */
+
 .theme-light {
   color: #222;
   background: linear-gradient(120deg, #f6f7f9 0%, #e0e7ef 100%);
@@ -221,6 +222,7 @@ body {
 }
 
 /* Dark theme */
+
 .theme-dark {
   color: #f6f7f9;
   background: linear-gradient(120deg, #181818 0%, #232526 100%);
@@ -244,9 +246,8 @@ body {
   box-shadow: 0 0 16px #000a, 0 0 24px #23252680 inset;
 }
 
-/* ...existing code... */
-
 /* Blue Synthwave theme */
+
 .theme-bluesynth {
   color: #e0f7fa;
   background: linear-gradient(120deg, #1a237e 0%, #0d47a1 50%, #1a237e 100%);
@@ -296,4 +297,143 @@ body {
   text-shadow: 0 0 32px #64b5f6, 0 0 40px #00bcd4;
 }
 
-/* ...rest of your code... */
+/* Midnight Theme */
+
+.theme-midnight {
+  color: #b3cfff;
+  background: linear-gradient(120deg, #0f2027 0%, #203a43 50%, #2c5364 100%);
+}
+
+.theme-midnight .topnav {
+  background: rgba(15, 32, 39, 0.97);
+  box-shadow: 0 2px 16px #00c6ff80;
+}
+.theme-midnight .topnav a {
+  color: #b3cfff;
+  background: none;
+  box-shadow: 0 0 8px #00c6ff40;
+}
+.theme-midnight .topnav a:hover,
+.theme-midnight .topnav a.active {
+  background: linear-gradient(90deg, #232526 0%, #00c6ff 100%);
+  color: #fff;
+  box-shadow: 0 0 16px #00c6ff, 0 0 24px #23252680 inset;
+}
+.theme-midnight .myButton,
+.theme-midnight .game-preview-btn {
+  background: linear-gradient(90deg, #232526 0%, #00c6ff 100%);
+  color: #b3cfff;
+  border: 2px solid #00c6ff;
+  box-shadow: 0 0 12px #00c6ff80, 0 0 24px #23252680 inset;
+}
+.theme-midnight .myButton:hover,
+.theme-midnight .game-preview-btn:hover {
+  background: linear-gradient(90deg, #00c6ff 0%, #232526 100%);
+  color: #fff;
+  box-shadow: 0 0 24px #00c6ff, 0 0 32px #232526 inset;
+}
+.theme-midnight .secret-btn {
+  color: #00c6ff;
+  text-shadow: 0 0 24px #00c6ff, 0 0 32px #232526;
+}
+.theme-midnight .secret-btn:hover, 
+.theme-midnight .secret-btn:focus {
+  color: #b3cfff;
+  text-shadow: 0 0 32px #00c6ff, 0 0 40px #232526;
+}
+
+/* Neon Theme */
+
+.theme-neon {
+  color: #fff;
+  background: linear-gradient(120deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+}
+
+.theme-neon .topnav {
+  background: rgba(48, 43, 99, 0.97);
+  box-shadow: 0 2px 16px #39ff14a0;
+}
+.theme-neon .topnav a {
+  color: #39ff14;
+  background: none;
+  text-shadow: 0 0 8px #39ff14, 0 0 16px #fff;
+  box-shadow: 0 0 8px #39ff1440;
+}
+.theme-neon .topnav a:hover,
+.theme-neon .topnav a.active {
+  background: linear-gradient(90deg, #39ff14 0%, #00eaff 100%);
+  color: #222;
+  box-shadow: 0 0 16px #00eaff, 0 0 24px #39ff1480 inset;
+}
+.theme-neon .myButton,
+.theme-neon .game-preview-btn {
+  background: linear-gradient(90deg, #39ff14 0%, #00eaff 100%);
+  color: #222;
+  border: 2px solid #39ff14;
+  box-shadow: 0 0 12px #39ff14, 0 0 24px #00eaff80 inset;
+  text-shadow: 0 0 8px #fff;
+}
+.theme-neon .myButton:hover,
+.theme-neon .game-preview-btn:hover {
+  background: linear-gradient(90deg, #00eaff 0%, #39ff14 100%);
+  color: #fff;
+  box-shadow: 0 0 24px #00eaff, 0 0 32px #39ff14 inset;
+}
+.theme-neon .secret-btn {
+  color: #39ff14;
+  text-shadow: 0 0 24px #39ff14, 0 0 32px #00eaff;
+}
+.theme-neon .secret-btn:hover, 
+.theme-neon .secret-btn:focus {
+  color: #00eaff;
+  text-shadow: 0 0 32px #39ff14, 0 0 40px #00eaff;
+}
+
+/* Night City Theme */
+
+.theme-nightcity {
+  color: #ffe082;
+  background: linear-gradient(120deg, #232526 0%, #414345 50%, #232526 100%);
+}
+
+.theme-nightcity .topnav {
+  background: rgba(35, 37, 38, 0.97);
+  box-shadow: 0 2px 16px #ff4081a0;
+}
+.theme-nightcity .topnav a {
+  color: #ffe082;
+  background: none;
+  text-shadow: 0 0 8px #ff4081, 0 0 16px #fff176;
+  box-shadow: 0 0 8px #ff408140;
+}
+.theme-nightcity .topnav a:hover,
+.theme-nightcity .topnav a.active {
+  background: linear-gradient(90deg, #ff4081 0%, #ffe082 100%);
+  color: #232526;
+  box-shadow: 0 0 16px #ff4081, 0 0 24px #ffe08280 inset;
+}
+.theme-nightcity .myButton,
+.theme-nightcity .game-preview-btn {
+  background: linear-gradient(90deg, #ff4081 0%, #ffe082 100%);
+  color: #232526;
+  border: 2px solid #ff4081;
+  box-shadow: 0 0 12px #ff4081, 0 0 24px #ffe08280 inset;
+  text-shadow: 0 0 8px #fff176;
+}
+.theme-nightcity .myButton:hover,
+.theme-nightcity .game-preview-btn:hover {
+  background: linear-gradient(90deg, #ffe082 0%, #ff4081 100%);
+  color: #ff4081;
+  box-shadow: 0 0 24px #ffe082, 0 0 32px #ff4081 inset;
+}
+.theme-nightcity .secret-btn {
+  color: #ff4081;
+  text-shadow: 0 0 24px #ff4081, 0 0 32px #ffe082;
+}
+.theme-nightcity .secret-btn:hover, 
+.theme-nightcity .secret-btn:focus {
+  color: #ffe082;
+  text-shadow: 0 0 32px #ff4081, 0 0 40px #ffe082;
+}
+
+/* End of theme styles */
