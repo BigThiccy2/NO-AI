@@ -70,9 +70,9 @@ body {
 }
 
 .secret-btn:hover, .secret-btn:focus {
-      color: #ff7dc9;
-      outline: none;
-      text-shadow: 0 0 32px #ff6ac1, 0 0 40px #198fff;
+color: #ff7dc9;
+outline: none;
+text-shadow: 0 0 32px #ff6ac1, 0 0 40px #198fff;
     }
 
       .secret-btn {

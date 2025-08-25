@@ -13,6 +13,22 @@
     <a href="#" id="contact-link">Contact</a>
     <a href="#" id="settings-link">Settings</a>
   </nav>
+  
+<section id="auth-section" style="display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 70vh;">
+  <h2>Login or Register</h2>
+  <form id="login-form" style="margin-bottom: 2rem;">
+    <input type="text" id="login-username" placeholder="Username" required class="myButton" style="margin-bottom: 1rem;">
+    <input type="password" id="login-password" placeholder="Password" required class="myButton" style="margin-bottom: 1rem;">
+    <button type="submit" class="myButton">Login</button>
+  </form>
+  <form id="register-form">
+    <input type="text" id="register-username" placeholder="New Username" required class="myButton" style="margin-bottom: 1rem;">
+    <input type="password" id="register-password" placeholder="New Password" required class="myButton" style="margin-bottom: 1rem;">
+    <button type="submit" class="myButton">Register</button>
+  </form>
+  <div id="auth-message" style="margin-top: 1rem; color: #ff4081;"></div>
+</section>
+
   <main id="main-section" style="display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 70vh;">
     <h1 style="font-size: 3rem; margin-bottom: 1rem; text-shadow: 0 0 24px #ff6ac1, 0 0 32px #198fff;">
       Welcome to 
