@@ -181,4 +181,67 @@ body {
   background: linear-gradient(90deg, #232526 0%, #181818 100%);
   color: #f6f7f9;
   border: 2px solid #444;
-  box-shadow: 0 0 12px #000a, 0 0
+  box-shadow: 0 0 12px #000a, 0 0 }
+
+  /* ...existing code... */
+
+/* Synthwave (default) */
+.theme-synthwave {
+  color: #f6f7f9;
+  background: linear-gradient(120deg, #2a2139 0%, #3a2d5d 50%, #2a2139 100%);
+}
+
+.theme-synthwave .topnav {
+  background: rgba(42, 33, 57, 0.95);
+  box-shadow: 0 2px 16px #ff6ac1a0;
+}
+
+/* Light theme */
+.theme-light {
+  color: #222;
+  background: linear-gradient(120deg, #f6f7f9 0%, #e0e7ef 100%);
+}
+
+.theme-light .topnav {
+  background: #fff;
+  box-shadow: 0 2px 16px #198fff40;
+}
+
+.theme-light .topnav a {
+  color: #222;
+  box-shadow: 0 0 8px #198fff20;
+  background: none;
+}
+
+.theme-light .topnav a:hover,
+.theme-light .topnav a.active {
+  background: linear-gradient(90deg, #e0e7ef 0%, #b3c6e0 100%);
+  color: #198fff;
+  box-shadow: 0 0 16px #198fff40, 0 0 24px #b3c6e080 inset;
+}
+
+/* Dark theme */
+.theme-dark {
+  color: #f6f7f9;
+  background: linear-gradient(120deg, #181818 0%, #232526 100%);
+}
+
+.theme-dark .topnav {
+  background: #232526;
+  box-shadow: 0 2px 16px #000a;
+}
+
+.theme-dark .topnav a {
+  color: #f6f7f9;
+  box-shadow: 0 0 8px #0008;
+  background: none;
+}
+
+.theme-dark .topnav a:hover,
+.theme-dark .topnav a.active {
+  background: linear-gradient(90deg, #232526 0%, #181818 100%);
+  color: #fff;
+  box-shadow: 0 0 16px #000a, 0 0 24px #23252680 inset;
+}
+
+/* ...rest of your code... */
