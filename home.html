@@ -90,10 +90,10 @@
 
     // Theme switching
     function setTheme(theme) {
-      document.body.classList.remove('theme-synthwave', 'theme-light', 'theme-dark');
-      document.body.classList.add('theme-' + theme);
-      localStorage.setItem('fractalHubTheme', theme);
-    }
+  document.body.classList.remove('theme-synthwave', 'theme-light', 'theme-dark', 'theme-bluesynth');
+  document.body.classList.add('theme-' + theme);
+  localStorage.setItem('fractalHubTheme', theme);
+}
 
     themeSelect.addEventListener('change', (e) => {
       setTheme(e.target.value);
