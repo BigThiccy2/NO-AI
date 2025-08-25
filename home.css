@@ -135,3 +135,50 @@ body {
   font-family: 'Fira Mono', 'Consolas', 'Monaco', monospace;
   text-shadow: 0 0 8px #ff6ac1;
 }
+
+/* ...existing code... */
+
+/* Synthwave (default) */
+.theme-synthwave {
+  color: #f6f7f9;
+  background: linear-gradient(120deg, #2a2139 0%, #3a2d5d 50%, #2a2139 100%);
+}
+
+/* Light theme */
+.theme-light {
+  color: #222;
+  background: linear-gradient(120deg, #f6f7f9 0%, #e0e7ef 100%);
+}
+
+.theme-light .topnav {
+  background: #fff;
+  box-shadow: 0 2px 16px #198fff40;
+}
+.theme-light .myButton,
+.theme-light .game-preview-btn {
+  background: linear-gradient(90deg, #e0e7ef 0%, #b3c6e0 100%);
+  color: #222;
+  border: 2px solid #198fff;
+  box-shadow: 0 0 12px #198fff40, 0 0 24px #b3c6e080 inset;
+}
+.theme-light .myButton:hover,
+.theme-light .game-preview-btn:hover {
+  background: linear-gradient(90deg, #b3c6e0 0%, #e0e7ef 100%);
+  color: #198fff;
+}
+
+/* Dark theme */
+.theme-dark {
+  color: #f6f7f9;
+  background: linear-gradient(120deg, #181818 0%, #232526 100%);
+}
+.theme-dark .topnav {
+  background: #232526;
+  box-shadow: 0 2px 16px #000a;
+}
+.theme-dark .myButton,
+.theme-dark .game-preview-btn {
+  background: linear-gradient(90deg, #232526 0%, #181818 100%);
+  color: #f6f7f9;
+  border: 2px solid #444;
+  box-shadow: 0 0 12px #000a, 0 0
