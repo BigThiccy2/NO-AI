@@ -489,4 +489,116 @@ text-shadow: 0 0 32px #ff6ac1, 0 0 40px #198fff;
   box-shadow: 0 0 32px #39ff14, 0 0 40px #00eaff inset;
 }
 
+/* ...existing code... */
+
+/* Default (Neon) style for app cards */
+.app-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(90deg, #232526 0%, #00eaff 100%);
+  border-radius: 12px;
+  padding: 1.5rem 2rem;
+  box-shadow: 0 0 16px #00eaff80, 0 0 32px #39ff1480 inset;
+  text-decoration: none;
+  color: #39ff14;
+  font-family: 'Fira Mono', 'Consolas', 'Monaco', monospace;
+  font-size: 1.1rem;
+  transition: background 0.3s, box-shadow 0.3s, color 0.3s;
+  min-width: 160px;
+  max-width: 200px;
+}
+
+.app-card img {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 0 8px #00eaff40;
+}
+
+.app-card:hover {
+  background: linear-gradient(90deg, #39ff14 0%, #00eaff 100%);
+  color: #fff;
+  box-shadow: 0 0 32px #39ff14, 0 0 40px #00eaff inset;
+}
+
+/* --- THEME OVERRIDES --- */
+
+/* Synthwave */
+.theme-synthwave .app-card {
+  background: linear-gradient(90deg, #ff6ac1 0%, #198fff 100%);
+  color: #fff;
+  box-shadow: 0 0 16px #ff6ac1, 0 0 32px #198fff80 inset;
+}
+.theme-synthwave .app-card:hover {
+  background: linear-gradient(90deg, #198fff 0%, #ff6ac1 100%);
+  color: #fff;
+  box-shadow: 0 0 32px #198fff, 0 0 40px #ff6ac1 inset;
+}
+
+/* Blue Synthwave */
+.theme-bluesynth .app-card {
+  background: linear-gradient(90deg, #64b5f6 0%, #00bcd4 100%);
+  color: #e0f7fa;
+  box-shadow: 0 0 16px #64b5f6, 0 0 32px #00bcd480 inset;
+}
+.theme-bluesynth .app-card:hover {
+  background: linear-gradient(90deg, #00bcd4 0%, #64b5f6 100%);
+  color: #fff;
+  box-shadow: 0 0 32px #00bcd4, 0 0 40px #64b5f6 inset;
+}
+
+/* Light */
+.theme-light .app-card {
+  background: linear-gradient(90deg, #e0e7ef 0%, #b3c6e0 100%);
+  color: #222;
+  box-shadow: 0 0 12px #198fff40, 0 0 24px #b3c6e080 inset;
+}
+.theme-light .app-card:hover {
+  background: linear-gradient(90deg, #b3c6e0 0%, #e0e7ef 100%);
+  color: #198fff;
+  box-shadow: 0 0 32px #198fff, 0 0 40px #b3c6e0 inset;
+}
+
+/* Dark */
+.theme-dark .app-card {
+  background: linear-gradient(90deg, #232526 0%, #181818 100%);
+  color: #f6f7f9;
+  box-shadow: 0 0 12px #000a, 0 0 24px #23252680 inset;
+}
+.theme-dark .app-card:hover {
+  background: linear-gradient(90deg, #181818 0%, #232526 100%);
+  color: #fff;
+  box-shadow: 0 0 32px #232526, 0 0 40px #181818 inset;
+}
+
+/* Midnight */
+.theme-midnight .app-card {
+  background: linear-gradient(90deg, #232526 0%, #00c6ff 100%);
+  color: #b3cfff;
+  box-shadow: 0 0 16px #00c6ff80, 0 0 32px #23252680 inset;
+}
+.theme-midnight .app-card:hover {
+  background: linear-gradient(90deg, #00c6ff 0%, #232526 100%);
+  color: #fff;
+  box-shadow: 0 0 32px #00c6ff, 0 0 40px #232526 inset;
+}
+
+/* Neon (default, already above) */
+
+/* Night City */
+.theme-nightcity .app-card {
+  background: linear-gradient(90deg, #ff4081 0%, #ffe082 100%);
+  color: #232526;
+  box-shadow: 0 0 12px #ff4081, 0 0 24px #ffe08280 inset;
+}
+.theme-nightcity .app-card:hover {
+  background: linear-gradient(90deg, #ffe082 0%, #ff4081 100%);
+  color: #ff4081;
+  box-shadow: 0 0 24px #ffe082, 0 0 32px #ff4081 inset;
+}
+
 /* End of theme styles */
