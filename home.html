@@ -8,10 +8,11 @@
 <body>
   <nav class="topnav">
     <a href="#" class="active" id="home-link">Home</a>
+    <a href="#" id="settings-link">Settings</a>
+    <a href="#" id="contact-link">Contact</a>
+    <a href="#" id="apps-link">Apps</a>
     <a href="#" id="features-link">Features</a>
     <a href="#" id="gallery-link">Gallery</a>
-    <a href="#" id="contact-link">Contact</a>
-    <a href="#" id="settings-link">Settings</a>
   </nav>
 
   <main id="main-section" style="display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 70vh;">
@@ -44,7 +45,21 @@
       style="background: #fff; border-radius: 12px; box-shadow: 0 0 24px #198fff40;">
       Loading…
     </iframe>
+
   </section>
+
+  <section id="apps-section" style="display: none; flex-direction: column; align-items: center; justify-content: center; min-height: 70vh;">
+  <h2 style="font-size: 2.2rem; color: #39ff14; text-shadow: 0 0 24px #39ff14, 0 0 32px #00eaff;">Your Apps</h2>
+  <div class="apps-grid">
+    <a class="app-card" href="https://www.desmos.com/calculator" target="_blank">
+      <img src="https://www.desmos.com/assets/img/logos/calculator.png" alt="Desmos Calculator" />
+      <span>Desmos Calculator</span>
+    </a>
+    <a class="app-card" href="https://docs.google.com/" target="_blank">
+      <img src="https://ssl.gstatic.com/docs/doclist/images/drive_2022q3_32dp.png" alt="Google Docs" />
+      <span>Google Docs</span>
+    </a>
+
   <section id="settings-section" style="display: none; flex-direction: column; align-items: center; justify-content: center; min-height: 70vh;">
     <h2 style="font-size: 2.2rem; color: #198fff; text-shadow: 0 0 24px #198fff, 0 0 32px #ff6ac1;">Settings</h2>
     <label for="theme-select" style="font-size: 1.2rem; color: #f6f7f9; margin-top: 2rem;">Choose Theme:</label>
@@ -138,3 +153,23 @@
   </script>
 </body>
 </html>
+
+<script>
+  // ...existing code...
+  const appsSection = document.getElementById('apps-section');
+  const appsLink = document.getElementById('apps-link');
+
+  function showSection(section) {
+    mainSection.style.display = section === 'main' ? 'flex' : 'none';
+    gameSection.style.display = section === 'game' ? 'flex' : 'none';
+    settingsSection.style.display = section === 'settings' ? 'flex' : 'none';
+    contactSection.style.display = section === 'contact' ? 'flex' : 'none';
+    appsSection.style.display = section === 'apps' ? 'flex' : 'none';
+  }
+
+  appsLink.addEventListener('click', (e) => {
+    e.preventDefault();
+    showSection('apps');
+  });
+
+  
