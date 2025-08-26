@@ -97,7 +97,15 @@
 
     // Theme switching
     function setTheme(theme) {
-  document.body.classList.remove('theme-synthwave', 'theme-light', 'theme-dark', 'theme-bluesynth');
+  document.body.classList.remove(
+    'theme-synthwave',
+    'theme-light',
+    'theme-dark',
+    'theme-bluesynth',
+    'theme-midnight',
+    'theme-neon',
+    'theme-nightcity'
+  );
   document.body.classList.add('theme-' + theme);
   localStorage.setItem('fractalHubTheme', theme);
 }
