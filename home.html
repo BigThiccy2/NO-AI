@@ -48,7 +48,7 @@
 
   </section>
 
-  <section id="apps-section" style="display: none; flex-direction: column; align-items: center; justify-content: center; min-height: 70vh;">
+<section id="apps-section" style="display: none; flex-direction: column; align-items: center; justify-content: center; min-height: 70vh;">
   <h2 style="font-size: 2.2rem; color: #39ff14; text-shadow: 0 0 24px #39ff14, 0 0 32px #00eaff;">Your Apps</h2>
   <div class="apps-grid">
     <a class="app-card" href="https://www.desmos.com/calculator" target="_blank">
@@ -59,6 +59,8 @@
       <img src="https://ssl.gstatic.com/docs/doclist/images/drive_2022q3_32dp.png" alt="Google Docs" />
       <span>Google Docs</span>
     </a>
+  </div>
+</section>
 
   <section id="settings-section" style="display: none; flex-direction: column; align-items: center; justify-content: center; min-height: 70vh;">
     <h2 style="font-size: 2.2rem; color: #198fff; text-shadow: 0 0 24px #198fff, 0 0 32px #ff6ac1;">Settings</h2>
@@ -76,100 +78,92 @@
   </section>
   <script>
     // Section elements
-    const mainSection = document.getElementById('main-section');
-    const gameSection = document.getElementById('game-section');
-    const settingsSection = document.getElementById('settings-section');
-    const contactSection = document.getElementById('contact-section');
+const mainSection = document.getElementById('main-section');
+const gameSection = document.getElementById('game-section');
+const settingsSection = document.getElementById('settings-section');
+const contactSection = document.getElementById('contact-section');
+const appsSection = document.getElementById('apps-section');
 
-    // Nav links
-    const homeLink = document.getElementById('home-link');
-    const settingsLink = document.getElementById('settings-link');
-    const contactLink = document.getElementById('contact-link');
+// Nav links
+const homeLink = document.getElementById('home-link');
+const settingsLink = document.getElementById('settings-link');
+const contactLink = document.getElementById('contact-link');
+const appsLink = document.getElementById('apps-link');
 
-    // Buttons
-    const fractalBtn = document.getElementById('fractal-secret-btn');
-    const backBtn = document.getElementById('back-btn');
-    const settingsBackBtn = document.getElementById('settings-back-btn');
-    const themeSelect = document.getElementById('theme-select');
+// Buttons
+const fractalBtn = document.getElementById('fractal-secret-btn');
+const backBtn = document.getElementById('back-btn');
+const settingsBackBtn = document.getElementById('settings-back-btn');
+const themeSelect = document.getElementById('theme-select');
 
-    // Show only the requested section
-    function showSection(section) {
-      mainSection.style.display = section === 'main' ? 'flex' : 'none';
-      gameSection.style.display = section === 'game' ? 'flex' : 'none';
-      settingsSection.style.display = section === 'settings' ? 'flex' : 'none';
-      contactSection.style.display = section === 'contact' ? 'flex' : 'none';
-    }
+// Show only the requested section
+function showSection(section) {
+  mainSection.style.display = section === 'main' ? 'flex' : 'none';
+  gameSection.style.display = section === 'game' ? 'flex' : 'none';
+  settingsSection.style.display = section === 'settings' ? 'flex' : 'none';
+  contactSection.style.display = section === 'contact' ? 'flex' : 'none';
+  appsSection.style.display = section === 'apps' ? 'flex' : 'none';
+}
 
-    // Navigation events
-    homeLink.addEventListener('click', (e) => {
-      e.preventDefault();
-      showSection('main');
-    });
-    settingsLink.addEventListener('click', (e) => {
-      e.preventDefault();
-      showSection('settings');
-    });
-    contactLink.addEventListener('click', (e) => {
-      e.preventDefault();
-      showSection('contact');
-    });
+// Navigation events
+homeLink.addEventListener('click', (e) => {
+  e.preventDefault();
+  showSection('main');
+});
+settingsLink.addEventListener('click', (e) => {
+  e.preventDefault();
+  showSection('settings');
+});
+contactLink.addEventListener('click', (e) => {
+  e.preventDefault();
+  showSection('contact');
+});
+appsLink.addEventListener('click', (e) => {
+  e.preventDefault();
+  showSection('apps');
+});
 
-    // Secret fractal button
-    fractalBtn.addEventListener('click', () => {
-      showSection('game');
-    });
+// Secret fractal button
+fractalBtn.addEventListener('click', () => {
+  showSection('game');
+});
 
-    // Back buttons
-    backBtn.addEventListener('click', () => {
-      showSection('main');
-    });
-    settingsBackBtn.addEventListener('click', () => {
-      showSection('main');
-    });
+// Back buttons
+backBtn.addEventListener('click', () => {
+  showSection('main');
+});
+settingsBackBtn.addEventListener('click', () => {
+  showSection('main');
+});
 
-    // Theme switching
-    function setTheme(theme) {
-      document.body.classList.remove(
-        'theme-synthwave',
-        'theme-light',
-        'theme-dark',
-        'theme-bluesynth',
-        'theme-midnight',
-        'theme-neon',
-        'theme-nightcity'
-      );
-      document.body.classList.add('theme-' + theme);
-      localStorage.setItem('fractalHubTheme', theme);
-    }
+// Theme switching
+function setTheme(theme) {
+  document.body.classList.remove(
+    'theme-synthwave',
+    'theme-light',
+    'theme-dark',
+    'theme-bluesynth',
+    'theme-midnight',
+    'theme-neon',
+    'theme-nightcity'
+  );
+  document.body.classList.add('theme-' + theme);
+  localStorage.setItem('fractalHubTheme', theme);
+}
 
-    themeSelect.addEventListener('change', (e) => {
-      setTheme(e.target.value);
-    });
+themeSelect.addEventListener('change', (e) => {
+  setTheme(e.target.value);
+});
 
-    // On load, set theme from localStorage
-    const savedTheme = localStorage.getItem('fractalHubTheme') || 'synthwave';
-    themeSelect.value = savedTheme;
-    setTheme(savedTheme);
+// On load, set theme from localStorage
+const savedTheme = localStorage.getItem('fractalHubTheme') || 'synthwave';
+themeSelect.value = savedTheme;
+setTheme(savedTheme);
   </script>
 </body>
 </html>
 
 <script>
-  // ...existing code...
-  const appsSection = document.getElementById('apps-section');
-  const appsLink = document.getElementById('apps-link');
 
-  function showSection(section) {
-    mainSection.style.display = section === 'main' ? 'flex' : 'none';
-    gameSection.style.display = section === 'game' ? 'flex' : 'none';
-    settingsSection.style.display = section === 'settings' ? 'flex' : 'none';
-    contactSection.style.display = section === 'contact' ? 'flex' : 'none';
-    appsSection.style.display = section === 'apps' ? 'flex' : 'none';
-  }
-
-  appsLink.addEventListener('click', (e) => {
-    e.preventDefault();
-    showSection('apps');
-  });
 
   
