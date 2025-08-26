@@ -35,11 +35,20 @@ body {
   border-radius: 10px;
   box-shadow: 0 2px 16px #ff6ac1a0;
   margin-bottom: 24px;
-  position: fixed; right;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  min-width: 400px;
+  max-width: 90vw;
 }
 
 .topnav a {
-  float: right;
+  /* float: right; */ /* Remove this line */
+  display: inline-block;
   color: #f6f7f9;
   text-align: center;
   padding: 12px 24px;
