@@ -35,6 +35,7 @@ body {
   border-radius: 10px;
   box-shadow: 0 2px 16px #ff6ac1a0;
   margin-bottom: 24px;
+  position: fixed;
 }
 
 .topnav a {
