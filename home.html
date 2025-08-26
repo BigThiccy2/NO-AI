@@ -68,6 +68,20 @@
     const mainSection = document.getElementById('main-section');
     const gameSection = document.getElementById('game-section');
     const settingsSection = document.getElementById('settings-section');
+    const contactLink = document.getElementById('contact-link');
+const contactSection = document.getElementById('contact-section');
+
+function showSection(section) {
+  mainSection.style.display = section === 'main' ? 'flex' : 'none';
+  gameSection.style.display = section === 'game' ? 'flex' : 'none';
+  settingsSection.style.display = section === 'settings' ? 'flex' : 'none';
+  contactSection.style.display = section === 'contact' ? 'flex' : 'none';
+}
+
+contactLink.addEventListener('click', (e) => {
+  e.preventDefault();
+  showSection('contact');
+});
 
     // Nav links
     const homeLink = document.getElementById('home-link');
