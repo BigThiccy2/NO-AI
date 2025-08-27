@@ -587,8 +587,6 @@ text-shadow: 0 0 32px #ff6ac1, 0 0 40px #198fff;
   box-shadow: 0 0 32px #00c6ff, 0 0 40px #232526 inset;
 }
 
-/* Neon (default, already above) */
-
 /* Night City */
 .theme-nightcity .app-card {
   background: linear-gradient(90deg, #ff4081 0%, #ffe082 100%);
