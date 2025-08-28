@@ -5,6 +5,26 @@
   <title>Fractal Hub</title>
   <link rel="stylesheet" href="home.css">
 </head>
+<div id="music-player-container">
+  <button id="music-toggle-btn" title="Music Player">
+    <img src="https://cdn-icons-png.flaticon.com/512/727/727245.png" alt="Music" style="width:32px;height:32px;">
+  </button>
+  <div id="music-popup" style="display:none;">
+    <div id="music-header">
+      <span>Music Player</span>
+      <button id="music-close-btn" title="Close" style="float:right;">✕</button>
+    </div>
+    <audio id="audio-player" controls style="width:100%;margin-top:10px;">
+      <source id="audio-source" src="https://cdn.pixabay.com/audio/2022/10/16/audio_12b6fae5b6.mp3" type="audio/mp3">
+      Your browser does not support the audio element.
+    </audio>
+    <div id="music-controls">
+      <button class="music-song-btn" data-src="https://cdn.pixabay.com/audio/2022/10/16/audio_12b6fae5b6.mp3">Synthwave</button>
+      <button class="music-song-btn" data-src="https://cdn.pixabay.com/audio/2022/03/15/audio_115b9b4bfa.mp3">Chill</button>
+      <button class="music-song-btn" data-src="https://cdn.pixabay.com/audio/2022/07/26/audio_124bfae5b6.mp3">Night City</button>
+    </div>
+  </div>
+</div>
 <body>
   <nav class="topnav">
     <a href="#" class="active" id="home-link">Home</a>

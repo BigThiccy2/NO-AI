@@ -591,4 +591,89 @@ text-shadow: 0 0 32px #ff6ac1, 0 0 40px #198fff;
   box-shadow: 0 0 24px #ffe082, 0 0 32px #ff4081 inset;
 }
 
+/* Music player container fixed to bottom left */
+#music-player-container {
+  position: fixed;
+  bottom: 24px;
+  left: 24px;
+  z-index: 2000;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* Music toggle button style */
+#music-toggle-btn {
+  background: #232526cc;
+  border: none;
+  border-radius: 50%;
+  padding: 8px;
+  box-shadow: 0 0 8px #00eaff80;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+#music-toggle-btn:hover {
+  background: #00eaffcc;
+}
+
+/* Music popup style */
+#music-popup {
+  margin-top: 10px;
+  background: #181818ee;
+  border-radius: 12px;
+  box-shadow: 0 0 16px #00eaff80;
+  padding: 16px;
+  min-width: 220px;
+  max-width: 260px;
+  color: #fff;
+  font-family: 'Fira Mono', 'Consolas', 'Monaco', monospace;
+  animation: fadeIn 0.3s;
+}
+
+#music-header {
+  font-weight: bold;
+  margin-bottom: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#music-close-btn {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+#music-controls {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.music-song-btn {
+  background: linear-gradient(90deg, #39ff14 0%, #00eaff 100%);
+  color: #232526;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 12px;
+  font-family: inherit;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.music-song-btn:hover {
+  background: linear-gradient(90deg, #00eaff 0%, #39ff14 100%);
+  color: #fff;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px);}
+  to { opacity: 1; transform: translateY(0);}
+}
+
 /* End of theme styles */
