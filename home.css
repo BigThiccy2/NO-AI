@@ -448,9 +448,6 @@ text-shadow: 0 0 32px #ff6ac1, 0 0 40px #198fff;
 }
 
 /* Apps section styles */
-
-/* ...existing code... */
-
 .apps-grid {
   display: flex;
   flex-wrap: wrap;
@@ -519,8 +516,6 @@ text-shadow: 0 0 32px #ff6ac1, 0 0 40px #198fff;
   transition: box-shadow 0.3s, transform 0.2s;
   display: block;
 }
-
-/* ...rest of your theme overrides and code... */
 
 /* --- THEME OVERRIDES --- */
 
